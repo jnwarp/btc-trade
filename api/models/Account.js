@@ -8,7 +8,21 @@
 module.exports = {
 
   attributes: {
+    accountEnabled: {
+      type: 'boolean',
+      required: true
+    },
 
+    email: {
+      type: 'string',
+      required: true,
+      unique: true
+    },
+
+    password: {
+      type: 'string',
+      required: true
+    }
   }
 };
 
