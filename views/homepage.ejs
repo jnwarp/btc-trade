@@ -1,2 +1,93 @@
-<h1>Hello world</h1>
-<p>This is a pretty shitty homepage!</p>
+<div class="container" style="padding-top: 60px">
+    <div class="row">
+        <!-- Price history -->
+        <div class="col-lg-4">
+            <div class="card border-info mb-3" style="border-width: 2px;">
+                <h3 class="card-header text-info text-center">BTC / USD</h3>
+                <div class="card-body" style="padding: 0px;">
+                    <table class="table table-sm table-striped" style="margin: 0px;">
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="priceHistory">
+                            <!--tr>
+                                <th scope="row">1</th>
+                                <td>10/24/2017 5:07pm</td>
+                                <td>$5,000</td>
+                            </tr-->
+                        </tbody>
+                    </table>
+                </div>
+                <!--div class="card-footer text-muted">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="0.0100 BTC" aria-label="Execute Trade">
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button">SELL</button>
+                            <button class="btn btn-success" type="button">BUY</button>
+                        </span>
+                    </div>
+                </div-->
+            </div>
+            <div class="card border-secondary mb-3" style="border-width: 2px">
+                <h5 class="card-header text-muted text-center">Execute Trade</h5>
+                <div class="card-body">
+                    <div class="input-group  mb-3">
+                        <span class="input-group-addon">BTC</span>
+                        <input id="sellAmount" type="text" class="form-control" placeholder="0.00000001" aria-label="Execute Trade">
+                        <span class="input-group-btn">
+                            <a id="executeSell" class="btn btn-danger" href="#">SELL</a>
+                        </span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input id="buyAmount" type="text" class="form-control" placeholder="0.01" aria-label="Execute Trade">
+                        <span class="input-group-btn">
+                            <a id="executeBuy" class="btn btn-success" href="#">BUY</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Orderbook -->
+        <div class="col-lg-7 offset-lg-1">
+            <div class="card border-primary mb-3" style="border-width: 2px">
+                <h3 class="card-header text-primary text-center">Orderbook</h3>
+                <div class="card-body" style="padding: 0px;">
+                    <table class="table table-sm table-hover" style="margin: 0px;">
+                        <thead>
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Type</th>
+                            <th scope="col" class="text-right">Shares</th>
+                            <th scope="col"></th>
+                            <th scope="col" class="text-right">USD Price</th>
+                            <th scope="col" class="text-right">USD Bal</th>
+                            <th scope="col" class="text-right">Coin Bal</th>
+                            <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderHistory">
+                            <!--tr class="table-success">
+                            <th scope="row">1</th>
+                            <td>10/24/2017 5:07pm</td>
+                            <td>BUY</td>
+                            <td class="text-right">0.0200</td>
+                            <td>BTC</td>
+                            <td class="text-right">$5,000</td>
+                            <td class="text-right">$100</td>
+                            <td class="text-right">0.0200</td>
+                            <td>BTC</td>
+                            </tr-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> <!-- ./col-md-8 -->
+    </div>
+</div>

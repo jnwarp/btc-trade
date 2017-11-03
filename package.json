@@ -34,5 +34,8 @@
     "url": "git://github.com/anonymous node/sails user/btc-trade.git"
   },
   "author": "anonymous node/sails user",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "bower": "^1.8.2"
+  }
 }
